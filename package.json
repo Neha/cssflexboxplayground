@@ -1,0 +1,21 @@
+{
+  "name": "flexbox-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  },
+  "scripts": {
+    "`": "parcel index.html",
+    "build": "parcel build index.html",
+    "serve": "parcel serve index.html --port 1111",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

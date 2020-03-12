@@ -1,0 +1,196 @@
+/* 
+ All copyright reserved
+ Author: Neha Sharma
+ Project: Flexbox Playgroud
+*/
+
+:root {
+  --color-deeppink: deeppink;
+  --color-darkblack: #191818;
+  --border-color: #3a3939;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-yellow: yellow;
+  --color-darkPink: #cc006d;
+}
+
+:focus{
+  outline: 2px dotted blue;
+  padding:1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-yellow);
+  font-family: arial;
+}
+
+select {
+  display: block;
+  margin: 0 0 15px 0;
+  /*need to check the performance how...it is printing in css*/
+  width: 100%;
+  height: 30px;
+  background: var(--color-white);
+}
+
+label {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-darkPink);
+  font-weight: 700;
+}
+
+h1 {
+  color: var(--color-darkPink);
+  font-size: 72px;
+  text-align: center;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+#container {
+  width: 98%;
+  margin: 0 auto;
+  padding: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.content .leftPanel {
+  flex: 15% 0 1;
+  background: var(--color-white);
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.leftPanel h2,
+.rightPanel h2 {
+  background: var(--color-white);
+  border-bottom: 1px solid var(--border-color);
+  margin: 0 0 20px 0;
+  color: var(--color-black);
+  text-align: center;
+  font-size: 22px;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+.centerPanel {
+  flex: 60% 0 1;
+  margin: 0 auto;
+  position: relative;
+}
+
+#parent::after {
+  content: "parent";
+  position: absolute;
+  bottom: 80px;
+  right: 30px;
+  font-size: 32px;
+  color: #ec8abf;
+  text-transform: uppercase;
+}
+
+.content .rightPanel {
+  flex: 20% 0 1;
+  background: #fff;
+  color: #000;
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+
+.rightPanel h3 {
+  color: var(--color-darkPink);
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightPanel p {
+  color: var(--color-black);
+  font-size: 18px;
+  line-height: 32px;
+}
+
+#parent {
+  min-height: 400px;
+  display: flex;
+  background: var(--color-deeppink);
+  padding: 10px;
+  border: 8px dashed #f9ce3c;
+  border-radius: 20px;
+}
+
+.item {
+  width: 180px;
+  background: var(--color-white);
+  margin: 5px;
+  padding: 1rem;
+  max-height: 200px;
+  position: relative;
+}
+
+.item::before {
+  content: "child";
+  text-transform: uppercase;
+  bottom: 0;
+  color: #999;
+  position: absolute;
+}
+
+.item input {
+  height: 25px;
+  padding: 2px;
+  width: 60%;
+  margin-bottom: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content,
+  #parent {
+    flex-direction: column;
+  }
+
+  .content .leftPanel,
+  .rightPanel,
+  .content,
+  .centerPanel {
+    flex-basis: 0;
+  }
+}
+
+#codePanel {
+  position: absolute;
+  bottom: 0;
+  color: var(--color-deeppink);
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 17px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 40px;
+}
+
+footer a {
+  color: #000;
+}
+
+.codeBoard{
+  background: #000;
+  color: #fff;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Let's Learn Flexbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <section id="container">
+      <h1 tabindex="0">Flexbox Playground</h1>
+      <section class="content">
+        <div class="leftPanel">
+          <h2>parent properties</h2>
+          <label for="fl-direction">flex-direction</label>
+          <select
+            id="fl-direction"
+            data-name="flex-direction"
+            data-type="direction"
+          >
+            <option value="row">Select the flex-direction</option>
+            <option value="row">row</option>
+            <option value="rowReverse">row-reverse</option>
+            <option value="column">column</option>
+            <option value="columnReverse">column-reverse</option>
+          </select>
+
+          <label for="fl-wrap">flex-wrap</label>
+          <select id="fl-wrap" data-name="flex-wrap" data-type="wrap">
+            <option value="row">Select the flex-wrap</option>
+            <option value="wrap">wrap</option>
+            <option value="noWrap">no-wrap</option>
+            <option value="wrapReverse">wrap-reverse</option>
+          </select>
+
+          <label for="fl-justifyContent">justify-content</label>
+          <select
+            id="fl-justifyContent"
+            data-name="justify-content"
+            data-type="justify"
+          >
+            <option value="row">Select the justify-content</option>
+            <option value="flexStart">flex-start</option>
+            <option value="flexEnd">flex-end</option>
+            <option value="center">center</option>
+            <option value="baseline">baseline</option>
+            <option value="spaceAround">space-around</option>
+
+            <option value="spaceBetween">space-between</option>
+          </select>
+
+          <label for="fl_alignItems">align-items</label>
+          <select id="fl_alignItems" data-name="align-items" data-type="align">
+            <option value="row">Select the align-items</option>
+            <option value="flexStart">flex-start</option>
+            <option value="flexEnd">flex-end</option>
+            <option value="center">center</option>
+            <option value="baseline">baseline</option>
+            <option value="stretch">stretch</option>
+          </select>
+
+          <label for="fl_alignContent">align-content</label>
+          <select
+            id="fl_alignContent"
+            data-name="align-content"
+            data-type="content"
+          >
+            <option value="row">Select the align-content</option>
+            <option value="flexStart">flex-start</option>
+            <option value="flexEnd">flex-end</option>
+            <option value="center">center</option>
+            <option value="spaceBetween">space between</option>
+            <option value="stretch">stretch</option>
+            <option value="spaceAround">space-around</option>
+          </select>
+        </div>
+
+        <section class="centerPanel">
+          <div id="parent">
+            <div class="item" tabindex="0">
+              <h3>One</h3>
+              <label for="flex-basis">basis</label>
+              <input
+                type="number"
+                class="fl-basis"
+                id="flex-basis"
+                placeholder="basis"
+                data-name="flex-basis"
+              />
+
+              <label for="flex-grow">grow</label>
+              <input
+                type="number"
+                class="fl-grow"
+                placeholder="grow"
+                id="flex-grow"
+                data-name="flex-grow"
+              />
+
+              <label for="flex-shrink">Shrink</label>
+              <input
+                type="number"
+                class="fl-shrink"
+                placeholder="Shrink"
+                id="flex-shrink"
+                data-name="flex-shrink"
+              />
+
+              <select
+                aria-label="alignself"
+                class="itemAlignSelf"
+                data-name="align-self"
+              >
+                <option>Select the align self</option>
+                <option value="flexStart">flex-start</option>
+                <option value="flexEnd">flex-end</option>
+                <option value="auto">auto</option>
+                <option value="baseline">baseline</option>
+                <option value="stretch">stretch</option>
+                <option value="center">center</option>
+              </select>
+            </div>
+            <div class="item" tabindex="0">
+              <h3>Two</h3>
+              <label for="flex-basis-2">basis</label>
+              <input
+                type="number"
+                class="fl-basis"
+                id="flex-basis-2"
+                placeholder="basis"
+                data-name="flex-basis"
+              />
+
+              <label for="flex-grow-2">grow</label>
+              <input
+                type="number"
+                class="fl-grow"
+                placeholder="grow"
+                id="flex-grow-2"
+                data-name="flex-grow"
+              />
+
+              <label for="flex-shrink-2">Shrink</label>
+              <input
+                type="number"
+                class="fl-shrink"
+                placeholder="Shrink"
+                id="flex-shrink-2"
+                data-name="flex-shrink"
+              />
+
+              <select
+                aria-label="alignself-2"
+                class="itemAlignSelf"
+                data-name="align-self"
+              >
+                <option>Select the align self</option>
+                <option value="flexStart">flex-start</option>
+                <option value="flexEnd">flex-end</option>
+                <option value="auto">auto</option>
+                <option value="baseline">baseline</option>
+                <option value="stretch">stretch</option>
+                <option value="center">center</option>
+              </select>
+            </div>
+            <div class="item" tabindex="0">
+              <h3>Three</h3>
+              <label for="flex-basis-1">basis</label>
+              <input
+                type="number"
+                class="fl-basis"
+                id="flex-basis-1"
+                placeholder="basis"
+                data-name="flex-basis"
+              />
+
+              <label for="flex-grow-1">grow</label>
+              <input
+                type="number"
+                class="fl-grow"
+                placeholder="grow"
+                id="flex-grow-1"
+                data-name="flex-grow"
+              />
+
+              <label for="flex-shrink-1">Shrink</label>
+              <input
+                type="number"
+                class="fl-shrink"
+                placeholder="Shrink"
+                id="flex-shrink-1"
+                data-name="flex-shrink"
+              />
+
+              <select
+                aria-label="alignself-1"
+                class="itemAlignSelf"
+                data-name="align-self"
+              >
+                <option>Select the align self</option>
+                <option value="flexStart">flex-start</option>
+                <option value="flexEnd">flex-end</option>
+                <option value="auto">auto</option>
+                <option value="baseline">baseline</option>
+                <option value="stretch">stretch</option>
+                <option value="center">center</option>
+              </select>
+            </div>
+          </div>
+        </section>
+        <div class="rightPanel" role="alert"  tabindex="0">
+          <h2>Property Details</h2>
+          <h3 class="propertyName">display:flex</h3>
+          <p class="description">
+            flex is the value of the display. It creates your layout to behave
+            like flex. There are 2 variatons: flex and inline-flex.
+          </p>
+          <div class="codeBoard" tabindex="0">
+            <h2>Code</h2>
+            <pre>.parent</pre>
+            <pre class="codeSnippet">
+  
+            </pre>
+            <pre>.child</pre>
+            <pre class="codeSnippetChild">
+              
+            </pre>
+          </div>
+        </div>
+        
+      </section>
+      <footer>
+        <small
+          >Made by
+          <a
+            href="https://twitter.com/hellonehha"
+            target="_blank"
+            rel="noopener"
+            rel="noreferrer"
+            >Neha Sharma</a
+          ></small
+        >
+      </footer>
+    </section>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
