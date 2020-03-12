@@ -1,4 +1,4 @@
-# flexbox playground
+# CSS FlexBox playground
 This is a demo to showcase how the CSS Flexbox works.
 
 ## Why?
