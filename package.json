@@ -10,8 +10,8 @@
     "cssnano": "^4.1.10"
   },
   "scripts": {
-    "`": "parcel index.html",
-    "build": "parcel build index.html",
+    "dev": "parcel index.html",
+    "build": "rm dist/* && parcel build index.html",
     "serve": "parcel serve index.html --port 1111",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
