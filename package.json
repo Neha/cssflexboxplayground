@@ -4,7 +4,7 @@
   "description": "",
   "main": "data.js",
   "dependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^2.8.2"
   },
   "devDependencies": {
     "cssnano": "^4.1.10"
